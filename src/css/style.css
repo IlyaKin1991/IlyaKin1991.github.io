@@ -322,13 +322,14 @@ nav{
     font-size: 16px;
 }
 .contacts-ul{
-    float: left;
+    height: 140px;
     margin-top: 45px;
-    padding-left: 690px;
+    padding-left: 670px;
 }
 
 .contacts-ul li{
     float: left;
+
     text-align: center;
     margin-right: 70px;
 }
@@ -339,9 +340,34 @@ nav{
   
 }
 .send-message{
-    float: left;
+   color: #fff;
+   text-align: center;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-size: 18px;  
+}
+.form-msg form{
     text-align: center;
     margin-top: 40px;
+    
+}
+.form-msg input{
+    width: 355px;
+    height: 35px;
+    background-color: #d3d6dc;
+}
+.form-msg textarea{
+    width: 713px;
+    height: 100px;
+    background-color: #d3d6dc;
+}
+.form-msg input.button{
+    background: rgba(0, 0, 0, 0);
+    margin-top: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 145px;
+    height: 45px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", sans-serif;
     color: #fff;
 }
-
