@@ -1,8 +1,10 @@
 nav{
-    widows: 100%;
+    width: 100%;
     height: 60px;
     background-color: #344051;
+    position: fixed;
 }
+
 .logo{
     font-family: "Arial", sans-serif;
     line-height: 60px;
@@ -10,6 +12,9 @@ nav{
     padding-left: 388px;
     color: #fff;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
 .menu{
     float: left;
@@ -23,10 +28,30 @@ nav{
     margin-right: 40px;
     line-height: 60px;
     text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: menuComing 0.2s ease forwards;
+    -o-animation: menuComing 0.2s ease forwards;
+    animation: menuComing 0.2s ease forwards;
 }
+.menu li a{
+    transition: all 0.5s;
+    color: #fff;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: #fff;    
+}
+.menu li a:hover{
+    color: #f29417;
+}
+.menu li a:active{
+    transform: scale(1.5);
+}
+
 .main{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
     
 }
@@ -35,6 +60,13 @@ nav{
     margin-top: 435px;
     margin-left: 404px;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titleComing 1s ease forwards;
+    -o-animation: titleComing 1s ease forwards;
+    animation: titleComing 1s ease forwards;
+    -webkit-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 .title_container h1{
     color: #2c384a;
@@ -61,6 +93,16 @@ nav{
     font-family: "Arial", sans-serif;
     font-weight: bold;
     padding: 0px 16px;
+    transition: all 0.2s;
+    transform: scale(1);
+   
+}
+.title_container input:hover{
+    background: #344051;
+    color: white;
+}
+.title_container input:active{
+    transform: scale(1.3);
 }
 .about {
     width: 100%;
@@ -96,7 +138,12 @@ nav{
     font-family: "Calibri", sans-serif;
     font-size: 20px; 
     color: #3f495a;
+    opacity: 0;
+    -webkit-animation: aboutTextcoming 2s ease forwards;
+    -o-animation: aboutTextcoming 2s ease forwards;
+    animation: aboutTextcoming 2s ease forwards;
 }
+
 .about input{
     display: block;
     background: none;
@@ -110,7 +157,15 @@ nav{
     background: url(../img/icon.png) 5% 50%/auto 70% no-repeat;
     border: 2px solid;
     border-radius: 5px;
+    transform: scale(1);
 }
+.about input:hover{
+    background-color: aqua;
+}
+.about input:active{
+    transform: scale(1.3);
+}
+
 .skills{
     width: 100%;
     height: 520px;
@@ -121,6 +176,8 @@ nav{
     margin-top: 80px;
     padding-left: 416px; 
 }
+
+
 .skills-ul li{
     text-align: center;
     width: 220px;
@@ -129,6 +186,14 @@ nav{
     color: #626a77;
     float: left;
     margin-right: 80px;
+    opacity: 0;
+    -webkit-animation: skillsComing 1.2s ease forwards;
+    -o-animation: skillsComing 1.2s ease forwards;
+    animation: skillsComing 1.2s ease forwards;
+   -webkit-animation-delay: 0.2s;
+   -o-animation-delay: 0.2s;
+   animation-delay: 0.2s;
+  
 }
 .skills-ul li h2{
     font-size: 15px;
@@ -136,7 +201,10 @@ nav{
     margin-top: 30px;
     margin-bottom: 15px;
     color: #cf7600;
-}  
+} 
+.skills li {
+    
+}
 
 .examples{
     width: 100%;
@@ -207,7 +275,15 @@ nav{
     color: #fff;
     font-size: 18px;
     font-family: "Franklin Gothic Medium", sans-serif;
+    transform: scale(1);
 }
+.examples button:hover{
+    background: aqua;
+}
+.examples button:active{
+    transform: scale(1.3);
+}
+
 .price{
     width: 100%;
     height: 650px;     
@@ -254,6 +330,7 @@ nav{
    height: 520px;
    width: 100%;   
    background: url(../img/stat-bg.jpg) no-repeat;
+    background-attachment: fixed;
 }
 
 .stat-ul{
@@ -355,6 +432,12 @@ nav{
     height: 35px;
     background-color: #d3d6dc;
 }
+.form-msg input.button:hover{
+    background: aqua;
+}
+.form-msg input.button:active{
+    transform: scale(1.3);
+}
 .form-msg textarea{
     width: 713px;
     height: 100px;
@@ -371,3 +454,75 @@ nav{
     font-family: "Franklin Gothic Medium", sans-serif;
     color: #fff;
 }
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes menuComing{
+    from{
+        margin-top: -80px;
+       opacity: 0;
+    }
+    to{
+       margin-top: 0px;
+        opacity: 1;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.2s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(4){
+    animation-delay: 0.6s;
+}
+.menu li:nth-child(5){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(6){
+    animation-delay: 1.0s;
+}
+
+@keyframes titleComing{
+    from{
+        margin-left: -500px;
+       opacity: 0;
+    }
+    to{
+       margin-left: 404px;
+        opacity: 1;
+    }
+}
+@keyframes aboutTextcoming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes skillsComing{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.skills-ul li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.skills-ul li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.skills-ul li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
