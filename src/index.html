@@ -5,29 +5,57 @@
     <meta name = "description" content = "Это моя первая страница">
     <title>Страница-визитка</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my_icons.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class = "logo">Илья Кин</div>
-            <div class="menu"><ul>
+           <div class="container">
+           <div class="row"> 
+           <div class="col-xxl-2 col-lg-3 col-7"><div class = "logo">Илья Кин</div></div>
+            <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
+               <ul>
                 <li><a href="#aboutme">Обо мне</a></li>
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="#examples">Кейс</a></li>
                 <li><a href="#price">Прайс</a></li>
                 <li><a href="#feedback">Отзывы</a></li>
                 <li><a href="#contacts">Контакты</a></li>
-            </ul></div>
+            </ul></div></div>
+            <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+            <div class="dropdown"><a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#aboutme">Обо мне</a></li>
+                <li><a class="dropdown-item" href="#services">Услуги</a></li>
+                <li><a class="dropdown-item" href="#examples">Кейс</a></li>
+                <li><a class="dropdown-item" href="#price">Прайс</a></li>
+                <li><a class="dropdown-item" href="#feedback">Отзывы</a></li>
+                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
+  </ul>
+</div></div>
+            </div>
+            </div>
         </nav>
     </header>
     
-    <div class="main"><div class="title_container">
+<main>
+   <section class="main">    
+    <div class="container h-100"><div class="row h-100 align-items-center"><div class="col-lg-6">
+       <div class="title_container">
         <h1>Привет<br>Я Илья Кин</h1>
         <h4>Фулл стек веб-разработчик</h4>
         <input type="button" value = "Обо мне">
         <input type="button" value = "Мои работы">
+    </div></div> 
     </div></div>
+          
+</section>
+    </main>
     <div class="about"><a name="aboutme"></a>
         <div class="header">ОБО МНЕ</div>  
         <img class="underline" src="img\underline.png" alt="Упс">      
@@ -35,6 +63,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <input type="button" value = "Скачать резюме">
     </div>
+    
+    <section> 
     <div class="skills"><a name="services"></a>
         <div class="header">ЧТО Я УМЕЮ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
@@ -46,6 +76,8 @@
         </ul></div>
         
     </div>
+    </section>
+    <section>
     <div class="examples"><a name="examples"></a>
         <div class="header">КЕЙСЫ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
@@ -62,6 +94,8 @@
         </form>
 
     </div>
+    </section>
+    <section>
     <div class="price"><a name="price"></a>
         <h2>Расчёт стоимости</h2>
         <h3>ТИП САЙТА</h3>
@@ -83,6 +117,8 @@
         <p>Сроки 0</p>
         <p>Стоимость 0</p>
     </div>
+    </section>
+    <section>
     <div class="statistics">
         <div class="header">НЕМНОГО СТАТИСТИКИ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
@@ -93,6 +129,8 @@
             <li><img src="img\kubok.png" alt="Упс"><h2>23</h2><p>НАГРАД ПОЛУЧЕНО</p></li>
         </ul></div> 
     </div>
+    </section>
+    <section>
     <div class="comments"><a name="feedback"></a>
        <div class="header">ОТЗЫВЫ</div>
        <img class="underline" src="img\underline.png" alt="Упс">
@@ -106,6 +144,8 @@
         </ul>
         </div>
     </div>
+    </section>
+    <section>
     <div class="contacts"><a name="contacts"></a>
         <div class="header-contacts">МОИ КОНТАКТЫ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
@@ -123,5 +163,8 @@
            <input class="button" type="submit" value = "Отправить"> 
         </form></div>
     </div>
+    </section>
+    
+<script src="js/bootstrap.bundle.min.js"></script>    
 </body>
 </html>
