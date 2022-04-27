@@ -58,9 +58,8 @@
     
     </main>
     
-    <section class="about">
+    <section class="about" id="aboutme">
     <div class="container h-100"><div class="row h-100 align-items-center"><div class="col">
-    <a name="aboutme"></a>
         <div class="header">ОБО МНЕ</div>  
         <img class="underline" src="img\underline.png" alt="Упс">      
         <img class="about-foto" src="img\foto.jpg" alt="Упс">
@@ -69,9 +68,8 @@
         </div></div></div>
     </section>
            
-    <section class="skills"> 
+    <section class="skills" id="services"> 
     <div class="container"><div class="row align-items-center"><div class="col">
-    <a name="services"></a>
        <div class="header">ЧТО Я УМЕЮ</div>
         <img class="underline" src="img\underline.png" alt="Упс"></div></div>
      <div class="row"><div class="col-xxl-12"> <div class="skills-ul"><ul>
@@ -82,27 +80,33 @@
         </ul></div></div></div></div>
     </section>
     
-    <section class="examples">
-      <div class="container"><div class="row align-items-center"><div class="col"><a name="examples"></a>
+    <section class="examples" id="examples">
+      <div class="container">
+       <div class="row align-items-center">
+       <div class="col">
         <div class="header">КЕЙСЫ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
-        <div class="pText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div> 
-        <img class="workplace" src="img\workplace.jpg" alt="Упс"></div></div>
-        <div class="row"> <div class="col">
+        <div class="pText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+         <div class="row"> 
+            <div class="col-xxl-12 d-lg-block d-none"><img class="workplace" src="img\workplace.jpg" alt="Упс"></div></div></div></div> 
+        <div class="row"> 
+        <div class="col-xxl-2 col-lg-3 col-5">
         <div class="client"><h3> CLIENT:</h3> 
         <p>Какая-то компания</p></div>
-        <div class="project_title"><h3>Название проекта</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed d</p></div>
         <div class="web-site"><h3>WEBSITE:</h3> 
         <p>http://www.google.com</p></div>
         <form action="http://www.google.com" target="_blank">
         <button>VISIT LIVE SITE</button>
-        </form></div></div>
+        </form></div>
+        <div class="col-xxl-9 offset-xxl-1 col-lg-8 col-6"><div class="project_title"><h3>Название проекта</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed d</p></div></div>
+      </div>
     </div>
     </section>
     
-    <section>
-    <div class="price"><a name="price"></a>
+    <section class="price" id="price">
+    <div class="container d-flex h-100 justify-content-center align-items-center">
+       <div class="row"><div class="col-xxl-10">
         <h2>Расчёт стоимости</h2>
         <h3>ТИП САЙТА</h3>
         <select class="selector" name="type_site" id="1">
@@ -122,10 +126,14 @@
         <img src="img/line.png" alt="УПС">
         <p>Сроки 0</p>
         <p>Стоимость 0</p>
-    </div>
+        <form action="#" target="_blank">
+        <button>Оставить заявку</button>
+        </form></div>
+    </div></div>
+   
     </section>
-    <section>
-    <div class="statistics">
+    <section class="statistics">
+    <div class="container">
         <div class="header">НЕМНОГО СТАТИСТИКИ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
         <div class="stat-ul"><ul>
@@ -136,8 +144,8 @@
         </ul></div> 
     </div>
     </section>
-    <section>
-    <div class="comments"><a name="feedback"></a>
+    <section class="comments" id="feedback">
+    <div class="container">
        <div class="header">ОТЗЫВЫ</div>
        <img class="underline" src="img\underline.png" alt="Упс">
         <img class="fotka" src="img\fotka.png" alt="Упс">
@@ -151,8 +159,8 @@
         </div>
     </div>
     </section>
-    <section>
-    <div class="contacts"><a name="contacts"></a>
+    <section class="contacts" id="contacts">
+    <div class="contacts">
         <div class="header-contacts">МОИ КОНТАКТЫ</div>
         <img class="underline" src="img\underline.png" alt="Упс">
         <div class="some-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis se</div>
@@ -172,6 +180,7 @@
     </section>
     
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/my_script.js"></script>    
 </body>
 </html>
