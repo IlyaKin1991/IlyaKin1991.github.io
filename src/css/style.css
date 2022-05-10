@@ -20,6 +20,9 @@ nav{
 .menu{
     float: left;
 }
+.modal-button{
+    visibility: hidden;    
+}
 
 .menu li{
     float: left;
@@ -94,7 +97,8 @@ main{
 .main{
     width: 100%;
     height: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    min-height: 540px;
+    background: url(../img/boy1.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 .title_container{
     color: #76828f;
@@ -176,6 +180,10 @@ main{
     font-weight: bold;
     color: #263244;
     }
+
+.about{
+    min-height: 800px;
+}
 .about p{
     color: #38485b;
     font-family: Arial, sans-serif;
@@ -198,22 +206,29 @@ main{
 
 .skills{
     background: url(../img/bg-skills.jpg) center/cover no-repeat;
+    min-height: 450px;
     
 }
-.custom{
-    border: 2px solid;
+
+.header_custom{
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    
 }
+
 .skills h2{
     font-size: 15px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 15px;
-    color: #cf7600;
+    color: white;
 }
 .skills p{
     font-family: "Franklin Gothic Medium", sans-serif;
     font-size: 14px;
-    color: #626a77;
+    color: white;
     font-weight: bold;
 }
 
@@ -222,7 +237,7 @@ main{
 }
 .examples p{
     font-family: Calibri, sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: #536070;
     font-weight: bold;
 }
@@ -253,6 +268,7 @@ main{
 }
 .price{
     height: 90%;
+    min-height: 900px;
 }
 .price-form{    
     height: 800px;
@@ -299,14 +315,16 @@ select{
 }
 .statistics{
     background: url(../img/stat-bg.jpg) center/cover no-repeat;
+    min-height: 450px;
+    background-attachment: fixed;
 }
 .statistics h2{
-    color: #283b4e;
+    color: white;
     font-size: 28px;
     font-weight: bold;  
 }
 .statistics p{
-    color: #283b4e;
+    color: white;
     font-size: 12px;
 }
 .animation-custom-ul{
@@ -318,12 +336,14 @@ select{
 }
 .comments{
     height: 60%;
+    min-height: 600px;
 }
 .custom_tochki{
     margin-right: 7px;
 }
 .contacts{
     background: url(../img/bg-contacts.jpg) center/cover no-repeat;
+    min-height: 840px;
 }
 .contacts_header{
     color:#fff;
@@ -332,10 +352,16 @@ select{
     font-weight: bold;
 }
 .contacts p{
+    margin-top: 15px;
     color:#fff;
-    font-size: 13px;
+    font-size: 16px;
     font-family: Calibri, sans-serif;
+    text-decoration: none;
     
+}
+.contacts a{
+    text-decoration: none;
+    color:#fff;
 }
 .custom-icon{
     color: #fff;

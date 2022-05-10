@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/my_icons.css">
 </head>
@@ -21,7 +22,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#aboutme">Обо мне</a>
         </li>
@@ -63,33 +64,55 @@
                   </form>
                   </div>   
             </div>
+
            </div>
        </div></div>
    </section>
     </main>
     
 
+<button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-target="#myModal">
+  Launch demo modal
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Подожди, не уходи!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Не спеши уходить! Заполни форму для обратной связи и получи скидку на первый заказ!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
+</div>
     <section class="about h-100 section" id="aboutme">
         <div class="container">
           <div class="row justify-content-center">
            <div class="col-xxl-2 mt-5 text-center">
-            <div class="header mt-5">ОБО МНЕ</div></div>  
+            <div class="header mt-5 wow animate__animated animate__shakeX">ОБО МНЕ</div></div>  
          </div>
-         
-          <div class="row justify-content-center ">
+              <div class="row justify-content-center ">
               <div class="col-xxl-2 mt-3 text-center">
               <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
           </div>
           
           <div class="row justify-content-center  mt-5">
              <div class="col-xxl-2 text-center">
-              <img class="about-foto mt-5 mb-2 animation-later image-link" src="img/default.jpg" data-src="img\foto.jpg" href="img\foto.jpg" alt="Упс">
+              <img class="about-foto mt-5 mb-2 animation-later image-link" src="img/default.jpg" data-src="img\foto1.jpg" href="img\foto1.jpg" alt="Упс">
           </div>
           </div>
           <div class="row justify-content-center">
-             <div class="col-xxl-8 col-xl-9 col-lg-10 col-12  mt-5">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim labore, repellat, deleniti, fugiat dolore corporis ea nesciunt illum suscipit mollitia repudiandae quae consequatur non reiciendis dolores quos autem corrupti quisquam.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim labore, repellat, deleniti, fugiat dolore corporis ea nesciunt illum suscipit mollitia repudiandae quae consequatur non reiciendis dolores quos autem corrupti quisquam.</p>
+             <div class="col-xxl-8 col-xl-9 col-lg-10 col-12  mt-5 text-around">
+              <p align="justify">Всем привет! Меня зовут Илья, мне 31 год и я из Санкт-Петербурга. Здесь я закончил Российский Государственный Гидрометеорологический
+              университет по профессии Информационная безопасность телекоммуникационных систем. В процессе работы по специальности, решил освоить
+              для себя знания по вёрстки сайтов, так как помимо дополнительного заработка, хотелось иметь возможность заниматься действительно чем-то 
+              интересным и полезным. По ссылке ниже вы можете скачать моё резюме и ознакомиться с ним.</p>
           </div>
         
           </div>
@@ -102,7 +125,7 @@
         
         <div class="row justify-content-center">
          <div class="col-xxl-2 mt-5 text-center">
-            <div class="header mt-5">ЧТО Я УМЕЮ</div></div>  
+            <div class="header_custom mt-5 wow animate__animated animate__shakeX">ЧТО Я УМЕЮ</div></div>  
          </div>
          
           <div class="row justify-content-center">
@@ -111,10 +134,10 @@
           </div>
           
           <ul class="row justify-content-around mt-5 animation-custom-ul">
-              <li class="col-3 text-center mt-5"><img src="img\note.jpg" alt="Упс"><h2>Веб-дизайн</h2><p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\sign.jpg" alt="Упс"><h2>Разработка</h2><p>Lorem ipsum dolor sit amet placerat facilisis mi in tempus elei</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\racket.jpg" alt="Упс"><h2>CEO-оптимизация</h2><p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempu</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\gramophon.jpg" alt="Упс"><h2>Маркетинг</h2><p>Lorem ipsum dolor sit amet placerat facilisis felis mi in temp</p></li>
+              <li class="col-3 text-center mt-5"><img src="img\note1.png" alt="Упс"><h2>Веб-дизайн</h2><p>Раработка дизайна вашего будущего сайта</p></li>
+              <li class="col-3 text-center mt-5"><img src="img\scobki.png" alt="Упс"><h2>Разработка</h2><p>Вёрстка сайта с использование всех новейших API</p></li>
+              <li class="col-3 text-center mt-5"><img src="img\racket.png" alt="Упс"><h2>CEO-оптимизация</h2><p>Поднятие вашего сайта в ТОПы поисковых систем</p></li>
+              <li class="col-3 text-center mt-5"><img src="img\gramophon.png" alt="Упс"><h2>Маркетинг</h2><p>Реклама вышего сайта на сторонних площадках</p></li>
           </ul>
         </div>
     </section>
@@ -123,7 +146,7 @@
         <div class="container">
             <div class="row justify-content-center">
          <div class="col-xxl-2 mt-5 text-center">
-            <div class="header mt-5">КЕЙСЫ</div></div>  
+            <div class="header mt-5 wow animate__animated animate__shakeX">КЕЙСЫ</div></div>  
          </div>
          
           <div class="row justify-content-center">
@@ -132,7 +155,7 @@
           </div>
           
           <div class="row justify-content-center"><div class="col-xxl-8 text-center mt-4">
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores officia minus, eaque iure saepe neque quidem quae dolor, quo.</p>  
+             <p>Ниже вы сможете визуально ознакомиться с моими работами.</p>  
           </div></div>
           
     <div class="row">
@@ -157,14 +180,14 @@
          
           </div>
          <div class="row mt-5">
-             <div class="col-2"><h3>CLIENT</h3><p>Какая-то компания</p>
-             <h3>WEB-SITE</h3><p>http://www.google.com</p>
+             <div class="col-3"><h3>CLIENT</h3><p>Яндекс</p>
+             <h3>WEB-SITE</h3><p>http://www.your-own-site.ru</p>
              <form action="http://www.google.com" target="_blank">
              <button class="site">Перейти на сайт</button>
              </form>
              </div>
-             <div class="col-xxl-9 col-lg-10 offset-xxl-1"><h3>Название проекта</h3>
-             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quasi, sed optio magnam culpa eaque deleniti quidem neque officia eos aperiam delectus et dignissimos dolorem itaque eveniet saepe, at molestias!</span></div>
+             <div class="col-xxl-8 col-lg-9 offset-xxl-1"><h3>Краткое описание проекта</h3>
+             <p>Сайт-визитка для всем известной компании!</p></div>
          </div>   
         </div>
     </section>
@@ -225,7 +248,7 @@
      <div class="container h-50">
         <div class="row justify-content-center">
          <div class="col-xxl-4 mt-5 text-center">
-            <div class="header mt-5">НЕМНОГО СТАТИСТИКИ</div></div>  
+            <div class="header_custom mt-5 wow animate__animated animate__shakeX">НЕМНОГО СТАТИСТИКИ</div></div>  
          </div>
          
           <div class="row justify-content-center">
@@ -246,7 +269,7 @@
         <div class="container">
           <div class="row justify-content-center">
            <div class="col-xxl-2 mt-5 text-center">
-            <div class="header mt-5">ОТЗЫВЫ</div></div>  
+            <div class="header mt-5 wow animate__animated animate__shakeX">ОТЗЫВЫ</div></div>  
          </div>
          
           <div class="row justify-content-center ">
@@ -279,7 +302,7 @@
         <div class="container">
              <div class="row justify-content-center">
            <div class="col-xxl-2 mt-5 text-center">
-            <div class="contacts_header mt-5">МОИ КОНТАКТЫ</div></div>  
+            <div class="contacts_header mt-5 wow animate__animated animate__shakeX">МОИ КОНТАКТЫ</div></div>  
          </div>
          
           <div class="row justify-content-center ">
@@ -288,37 +311,37 @@
           </div>
           <div class="row justify-content-center mt-5">
               <div class="col-xxl-6 text-center">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iure ipsam aspernatur asperiores.</p>
+                  <p>Ниже вы можете ознакомиться с моими контактными данными, а так же заполнить форму и получить обратную связь.</p>
                   </div></div>
         
         <div class="row justify-content-center mt-5">
                <div class="col-xxl-2 col-xl-3 col-4 text-center">
                 <i class="custom-icon fa fa-map-marker" aria-hidden="true"></i>
-                    <p>Санкт-Петербург<br>Невский проспект 11</p></div>
+                    <p><a href="#map">Санкт-Петербург<br>Кантемировская 5</a></p></div>
                 <div class="col-xxl-2 col-xl-3 col-4  text-center">
                     <i class="custom-icon fa fa-envelope-o" aria-hidden="true"></i>
-                    <p>info@company.com</p></div>
+                    <p><a href="mailto:kin.1991@inbox.ru">kin.1991@inbox.ru</a></p></div>
                 
             <div class="col-xxl-2 col-xl-3 col-4  text-center">
                 <i class="custom-icon fa fa-phone" aria-hidden="true"></i>
-                    <p>+7 999 999-99-99</p></div>
+                    <p><a href="tel:+79171250085">+7 917 125-00-85</a></p></div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-xxl-3 text-center mb-5">
                     <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
                 </div></div>
-            <form action="#" id="send_msg">
+            <form action="php/mail.php" id="send_msg" method="post">
               <div class="row justify-content-center ">
                 <div class="col-4">
-                  <input type="text" class="form-control" id="inputName" form="send_msg" placeholder="Имя" required>
+                  <input type="text" name="name" class="form-control" id="inputName" form="send_msg" placeholder="Имя" required>
                 </div>
                 
                 <div class="col-4">
-                  <input type="email" class="form-control" id="inputEmail" form="send_msg" placeholder="Email" required>
+                  <input type="email" name="email" class="form-control" id="inputEmail" form="send_msg" placeholder="Email" required>
                 </div>
               
               <div class="col-8 mt-3">
-                  <textarea type="text" rows="5" class="form-control textarea_custom" id="inputmsg" placeholder="Сообщение" form="send_msg"></textarea>
+                  <textarea type="text" name="message" rows="5" class="form-control textarea_custom" id="inputmsg" placeholder="Сообщение"></textarea>
               </div>
               </div>
             <div class="row justify-content-center mt-4">
@@ -329,11 +352,19 @@
             </form>
         </div>
     </section>
+    <section class="map" id="map">
+        <div class="container-fluid"><div class="row">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9e91bceaf6cd651759b70d5b9f136bebab8f37e1199b8d02c3102f652416fc5f&amp;width=100%25&amp;height=488&amp;lang=ru_RU&amp;scroll=false"></script>
+
+        </div></div>
+    </section>
     
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init()</script>
 <script src="js/myScript1.js"></script>    
 </body>
 </html>

@@ -1,9 +1,6 @@
-
 $(document).ready(function(){
     
-    
-    
-     $('.image-link').magnificPopup({type:'image'});
+    $('.image-link').magnificPopup({type:'image'});
     $(window).scroll(() => {
                 let scrollDistance = $(window).scrollTop();
     
@@ -82,15 +79,31 @@ adapt = $('#cross_site').val();
 }); 
 
    $('#calc').click(function(){
-      $('#days').text(days + " дней");
-      $('#cost').text(cost + " рублей");       
+      $('#days').text("от " + days + " дней");
+      $('#cost').text("от " + cost + " рублей");       
     });
-});
-      
-
-                 
+    
+    
+    setTimeout("$('.modal-button').click()", 10000);
+     $('#send_msg').submit(function(event){
+         event.preventDefault();
+         $.ajax({
+             type: "post",
+             url: "php/mail.php",
+             data: $(this).serialize()
+         }).done(function(){
+             $(this).find("input").val("");
+             alert("Success");
+             $("#send_msg").trigger()
+         });
+         return false;
+     });
+    
+});  
+                
 $('a[href^="#"]').click(function(){
     let valHref =  $(this).attr("href");
     $('html,body').animate({scrollTop:$(valHref).offset().top-20 + "px"});
 
-})
+});
+
