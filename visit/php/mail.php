@@ -8,6 +8,14 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
+$hotName = $_POST['hotName'];
+$hotEmail = $_POST['hotEmail'];
+$hotPhone = $_POST['hotPhone'];
+$arrVarient = $_POST['varconnect'];
+
+$hotVarient = implode('|', $arrVarient);
+
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -29,7 +37,11 @@ $mail->addAddress('devilboy163@yandex.ru');     // Кому будет уход�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name ."<br>". $email . " <br>" . $message;
+if(empty($hotName)){
+   $mail->Body = '' .$name ."<br>". $email . " <br>" . $message; 
+}else{
+    $mail->Body = '' .$hotName ."<br>". $hotEmail . " <br>" . $hotPhone . " <br>" . $hotVarient;
+    }
 
 
 if(!$mail->send()) {

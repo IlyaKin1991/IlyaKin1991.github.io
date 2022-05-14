@@ -79,12 +79,15 @@ adapt = $('#cross_site').val();
 }); 
 
    $('#calc').click(function(){
+       $('.selector').val("0");
       $('#days').text("от " + days + " дней");
-      $('#cost').text("от " + cost + " рублей");       
+      $('#cost').text("от " + cost + " рублей");
+       days = 5;
+       cost = 5000;
     });
     
     
-    setTimeout("$('.modal-button').click()", 10000);
+    setTimeout("$('.modal-button').click()", 30000);
     
      $('#send_msg').submit(function(event){
          event.preventDefault();
@@ -94,7 +97,20 @@ adapt = $('#cross_site').val();
              data: $(this).serialize()
          }).done(function(){
              $(this).find("input").val("");
-             alert("Спасибо!Ваше сообщение успешно отправлено. Скоро я с Вами свяжусь.");
+             $("#modalSendMsgButton").click();
+             $("form").trigger("reset");
+         });
+         return false;
+     });
+       $('#hotForm').submit(function(event){
+         event.preventDefault();
+         $.ajax({
+             type: "post",
+             url: "php/mail.php",
+             data: $(this).serialize()
+         }).done(function(){
+             $(this).find("input").val("");
+             $("#modalSendMsgButton").click();
              $("form").trigger("reset");
          });
          return false;

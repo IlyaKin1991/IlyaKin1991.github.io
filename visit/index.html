@@ -53,20 +53,96 @@
            <div class="col-lg-6 mt-5 pt-5">
             <div class="title_container mt-5">
                 <h1>Привет<br>Я Илья Кин</h1>
-                <h4>Фулл стек веб-разработчик</h4>
+                <h4>Фулл-стек веб-разработчик</h4>
                   <div class="row justify-content-center">
-                  <form action="#aboutme" class="col-xxl-3 col-xl-4 mt-5 ">
-                   <button>Обо мне</button>
-                  </form>
-        
-                   <form action="#examples" class="col-xxl-3 col-xl-4 mt-5 ">
-                   <button>Мои работы</button>
-                  </form>
+<button type="button" class="btn btn-primary col-3 mt-5 " data-bs-toggle="modal" data-bs-target="#feedbackModal">
+  Обратная связь
+</button>
+                    <a href="#examples">
+                    <button class="btn btn-primary col-3 mt-5">Мои работы</button>
+                    </a>
+ 
                   </div>   
             </div>
+            
+<button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#modalSendMsg" id="modalSendMsgButton">
+  Launch demo modal
+</button>
+
+<div class="modal fade" id="modalSendMsg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Спасибо за проявленный интерес!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Я свяжусь с вами в течении 10 минут.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Ок</button>
+      </div>
+    </div>
+  </div>
+</div>     
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="feedbackModalLabel">Форма обратной связи</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form action="php/hotmail.php" method="post" id="hotForm">
+ <div class="row mb-3">
+    <label for="clientName" class="col-sm-2 col-form-label">Имя</label>
+    <div class="col-sm-10">
+      <input type="text" name="hotName" class="form-control" id="clientName" required>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" name="hotEmail" class="form-control" id="inputEmail">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPhone" class="col-sm-2 col-form-label">Телефон</label>
+    <div class="col-sm-10">
+      <input type="tel" name="hotPhone" class="form-control" id="inputPhone">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-4 pt-0">Предпочтительный способ связи</legend>
+    <div class="col-sm-8">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="varconnect[]" id="gridRadios1" value="Email" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Email
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="varconnect[]" id="gridRadios2" value="Phone">
+        <label class="form-check-label" for="gridRadios2">
+          Телефон
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="submit" class="btn btn-primary" form="hotForm">Отправить заявку</button>
+      </div>
+    </div>
+  </div>
+</div>
 
            </div>
-       </div></div>
+       </div>
+      </div>
    </section>
     </main>
     
@@ -91,7 +167,8 @@
     </div>
   </div>
 </div>
-    <section class="about h-100 section" id="aboutme">
+   
+    <section class="about section" id="aboutme">
         <div class="container">
           <div class="row justify-content-center">
            <div class="col-xxl-2 mt-5 text-center">
@@ -99,12 +176,12 @@
          </div>
               <div class="row justify-content-center ">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
           
           <div class="row justify-content-center  mt-5">
              <div class="col-xxl-2 text-center">
-              <img class="about-foto mt-5 mb-2 animation-later image-link" src="img/default.jpg" data-src="img\foto1.jpg" href="img\foto1.jpg" alt="Упс">
+              <img class="about-foto mt-5 mb-2 animation-later image-link" src="img/default.jpg" data-src="img/foto1.jpg" href="img/foto1.jpg" alt="Упс">
           </div>
           </div>
           <div class="row justify-content-center">
@@ -116,11 +193,11 @@
           </div>
         
           </div>
-          <div class="row justify-content-center mt-5 "> <div class="col-xxl-3 mt-5 text-center"><button>Скачать резюме</button></div></div>
+          <div class="row justify-content-center mt-5 "> <div class="col-xxl-3 mt-5 text-center"><a href="Kin_Ilya.pdf" download="Резюме_Кин_Илья">Скачать резюме</a></div></div>
          </div>
     </section>
     
-    <section class="skills h-50 section" id="services">
+    <section class="skills section" id="services">
         <div class="container">
         
         <div class="row justify-content-center">
@@ -130,14 +207,14 @@
          
           <div class="row justify-content-center">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
           
           <ul class="row justify-content-around mt-5 animation-custom-ul">
-              <li class="col-3 text-center mt-5"><img src="img\note1.png" alt="Упс"><h2>Веб-дизайн</h2><p>Раработка дизайна вашего будущего сайта</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\scobki.png" alt="Упс"><h2>Разработка</h2><p>Вёрстка сайта с использование всех новейших API</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\racket.png" alt="Упс"><h2>CEO-оптимизация</h2><p>Поднятие вашего сайта в ТОПы поисковых систем</p></li>
-              <li class="col-3 text-center mt-5"><img src="img\gramophon.png" alt="Упс"><h2>Маркетинг</h2><p>Реклама вышего сайта на сторонних площадках</p></li>
+              <li class="col-3 text-center mt-5"><img src="img/note1.png" alt="Упс"><h2>Веб-дизайн</h2><p>Раработка дизайна вашего будущего сайта</p></li>
+              <li class="col-3 text-center mt-5"><img src="img/scobki.png" alt="Упс"><h2>Разработка</h2><p>Вёрстка сайта с использование всех новейших API</p></li>
+              <li class="col-3 text-center mt-5"><img src="img/racket.png" alt="Упс"><h2>CEO-оптимизация</h2><p>Поднятие вашего сайта в ТОПы поисковых систем</p></li>
+              <li class="col-3 text-center mt-5"><img src="img/gramophon.png" alt="Упс"><h2>Маркетинг</h2><p>Реклама вышего сайта на сторонних площадках</p></li>
           </ul>
         </div>
     </section>
@@ -151,7 +228,7 @@
          
           <div class="row justify-content-center">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
           
           <div class="row justify-content-center"><div class="col-xxl-8 text-center mt-4">
@@ -211,26 +288,26 @@
                 <div class="row justify-content-center"><div class="col-xxl-10 col-11  mb-4"> 
                      <h3>ТИП САЙТА</h3>
                       <select class="selector" name="type_site" id="typ_site">
-                       <option disabled selected>Выберите пункт...</option>
+                       <option value="0" disabled selected>Выберите пункт...</option>
                         <option value="1">Визитка</option>
                         <option value="2" >Онлайн-магазин</option>
                  </select>
                                    
                   <h3 class="mt-5">ДИЗАЙН</h3>
                 <select class="selector" name="type_site" id="design_site">
-                <option disabled selected>Выберите пункт...</option>
+                <option value="0" disabled selected>Выберите пункт...</option>
             <option value="1">Модерн</option>
             <option value="2">Олд-скул</option>
                 </select>
                                                    
                   <h3 class="mt-5">АДАПТИВНОСТЬ</h3>
                 <select class="selector" name="type_site" id="cross_site">
-                <option disabled selected>Выберите пункт...</option>
+                <option value="0" disabled selected>Выберите пункт...</option>
             <option value="1">Компьютер</option>
             <option value="2">Смартфон</option>
                 </select>
            
-                 <img class="d-block w-100 mt-4" src="img\line.png" alt="Упс">
+                 <img class="d-block w-100 mt-4" src="img/line.png" alt="Упс">
             
                    </div></div>
                   <div class="row justify-content-center">
@@ -254,8 +331,8 @@
                
     </section>
     
-    <section class="statistics h-50">
-     <div class="container h-50">
+    <section class="statistics">
+     <div class="container">
         <div class="row justify-content-center">
          <div class="col-xxl-4 mt-5 text-center">
             <div class="header_custom mt-5 wow animate__animated animate__shakeX">НЕМНОГО СТАТИСТИКИ</div></div>  
@@ -263,7 +340,7 @@
          
           <div class="row justify-content-center">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
           
           <ul class="row justify-content-around mt-5 animation-custom-ul">
@@ -284,44 +361,47 @@
          
           <div class="row justify-content-center ">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-             <div class="row justify-content-center  mt-5">
+             <div class="row justify-content-center mt-5">
              <div class="col-xxl-2 text-center">
-              <img class="about-foto mt-5 mb-2 animation-later" src="img/default.jpg" data-src="img/fotka.png" alt="Упс">
+              <img class="about-foto mt-5 mb-2 animation-later" src="img/default.jpg" data-src="img/comments.png" alt="Упс">
           </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center pb-5">
              <div class="col-xxl-8 text-center  mt-5">
               <p>Сайт получился красивым и современным. Спасибо!</p>
               <p><b>Елена</b>, Ген.директор Яндекс.</p>
+
           </div>
         
           </div>
     </div>
     <div class="carousel-item">
-             <div class="row justify-content-center  mt-5">
+             <div class="row justify-content-center mt-5">
              <div class="col-xxl-2 text-center">
               <img class="about-foto mt-5 mb-2 animation-later" src="img/default.jpg" data-src="img/fotka.png" alt="Упс">
           </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center pb-5">
              <div class="col-xxl-8 text-center  mt-5">
               <p>Большое спасибо Илье за скорость и качество выполнения своей работы!</p>
-              <p><b>Сергей</b>, Ген.директор Рога и Копыта.</p>
+                 <p><b>Сергей</b>, Ген.директор Рога и Копыта.</p>
+                 
           </div>
         
           </div>
      
-    </div>
-  </div>
+      </div></div>
+
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Предыдущий</span>
@@ -335,7 +415,7 @@
          </div>
     </section>
     
-    <section class="contacts h-100 section" id="contacts">
+    <section class="contacts section" id="contacts">
         <div class="container">
              <div class="row justify-content-center">
            <div class="col-xxl-2 mt-5 text-center">
@@ -344,7 +424,7 @@
          
           <div class="row justify-content-center ">
               <div class="col-xxl-2 mt-3 text-center">
-              <img class="underline mt-2" src="img\underline.png" alt="Упс"></div>
+              <img class="underline mt-2" src="img/underline.png" alt="Упс"></div>
           </div>
           <div class="row justify-content-center mt-5">
               <div class="col-xxl-6 text-center">
@@ -383,19 +463,12 @@
               </div>
             <div class="row justify-content-center mt-4">
                 <div class="col-xxl-2 text-center">
-                    <input class="button-send" type="submit" form="send_msg">
+                    <input class="button-send" type="submit">
                 </div></div>
             
             </form>
         </div>
-    </section>
-    <section class="map" id="map">
-        <div class="container-fluid"><div class="row">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9e91bceaf6cd651759b70d5b9f136bebab8f37e1199b8d02c3102f652416fc5f&amp;width=100%25&amp;height=488&amp;lang=ru_RU&amp;scroll=false"></script>
-
-        </div></div>
-    </section>
-    
+    </section>    
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
